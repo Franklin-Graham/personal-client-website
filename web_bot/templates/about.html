@@ -1,0 +1,86 @@
+{% load static %}
+<div class="container text">
+<h7>IT'S ME</h7>
+    {% for i in object_1 %}
+<h5 class="name">{{i.Name}}</h5>
+
+<p class="user">{{i.info}}</p>
+<a href="#about" class="btn btn-danger btn-sm know_more">Know More</a>
+<br>
+<br>
+
+<div class="card card_dec">
+  <div class="card-body quotes face back">
+    <p>{{i.quotes}}</p>
+  </div>
+</div>
+<br>
+{% for y in object_4 %}
+<div class="card account_card" style="width:21rem;">
+<div class="card-body account_link">
+    <div class="a_1"><a href="{{y.Github}}"><i style="font-size:3em;color:black;" class="fab fa-github"></i></a></div>
+    <div class="a_2"><a href="{{y.Telegram}}"><i style="font-size:3em;color:black;" class="fab fa-telegram"></i></a></div>
+    <div class="a_3"><a href="{{y.Facebook}}"><i style="font-size:3em;color:black;" class="fab fa-facebook"></i></a></div>
+    <div class="a_4"><a href="{{y.Twitter}}"><i style="font-size:3em;color:black;" class="fab fa-twitter-square"></i></a></div>
+</div>
+</div>
+    {% endfor %}
+<br>
+
+<div class="card shadow-lg p-3 mb-5 bg-body rounded card_dec" id="about">
+  <div class="card-body">
+<h4 class="heading_text">About Me</h4>
+<p class="paragraph_text">{{i.About}}</p>
+  </div>
+</div>
+
+
+<div class="card shadow-sm p-3 mb-5 bg-body rounded " id="tele">
+    <div class="card-body">
+<h4 class="heading_text"><i class="fab fa-telegram"></i> Telegram Bots</h4>
+        {% for x in object_2 %}
+    <div class="card-body shadow-lg p-3 mb-5 bg-body rounded paragraph_text card_slide">
+    <img class="tele_icon" src="{{x.Telegram_icon.url}}" alt="" width="60px" height="60px"><a class="tele_link" href="#"> {{x.Telegram_bot}} </a>
+    </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+    <hr>
+<div class="container">
+    <h4>Support</h4>
+<div class="Dropdown">
+<button id="Dropdown-Button" class="btn btn-dark btn-sm">Buy me a coffee <i class="fas fa-coffee"></i></button>
+    <div class="Dropdown-Menu">
+        <p class="upi">UPI: {{i.your_upi}}</p>
+    </div>
+</div>
+</div>
+<hr>
+<br>
+
+<div class="card shadow-sm p-3 mb-5 bg-body rounded">
+<h4 class="heading_text"><i class="fab fa-github-square"></i> GitHub</h4>
+    {% for z in object_3 %}
+    <div class=" card-body shadow-lg p-3 mb-5 bg-body rounded paragraph_text">
+        <a style="text-decoration:none;margin-left:25px;font-size:15px;text-align:center;color:black;" href="https://github.com/Clinton-Abraham{{z.Repository_name}}">{{z.Repository_name}}</a>
+    <br><br>
+    </div>
+    {% endfor %}
+</div>
+
+
+<div class="card shadow-lg p-3 mb-5 bg-body rounded" id="contact">
+    <div class="card-body card_contact">
+    <h4 class="heading_text">Contact <i class="fas fa-address-book"></i></h4>
+    <h7>Mobile: {{i.contact_1}} </h7><br>
+    <h7>Mobile: {{i.contact_2}}</h7><br>
+    <h7><i class="fab fa-whatsapp"></i> Whatsapp: {{i.whatsapp}}</h7><br><br>
+    <h4>Lives in <i class="fas fa-globe-africa"></i></h4>
+    <h7>Tamil Nadu, India</h7>
+    </div>
+</div>
+
+{% endfor %}
+</div>
