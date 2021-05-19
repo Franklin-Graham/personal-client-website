@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from . models import Detail,Telegram_project,Github_project,Account
+from django.core.paginator import Paginator,EmptyPage,InvalidPage
 # Create your views here.
-def fun1(request):
+def fun1(request,id=None):
     obj_1 = Detail.objects.all()
     obj_2 = Telegram_project.objects.all()
     obj_3 = Github_project.objects.all()

@@ -1,10 +1,10 @@
 {% load static %}
-<div>
+<div class="container">
     <header>
         <center>
-            <img src="{% static 'images/header.jpg' %}" alt="C-A" width="950px" height="30px">
+            <img class="header_img" src="">
             {% for i in object_1 %}
-            <img class="logo" src="{{i.logo_image.url}}" alt="logo" width="60px" height="60px">
+            <a href="/"><img class="logo" src="{{i.logo_image.url}}" alt="logo" width="60px" height="60px"></a>
             {% endfor %}
         </center>
     </header>

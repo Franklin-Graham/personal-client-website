@@ -1,18 +1,28 @@
 html{
 scroll-behavior:smooth;
 }
+*{
+background-color:;
+}
+.header_img{
+background-color:#F8F8F8;
+}
+
 .logo{
-margin-top:-33px;}
+margin-top:0;
+}
 .name{
 font-family:simplifica;
 font-size:30px;
 font-weight:bold;
-background-color:white;
+background-color:;
 letter-spacing:.1em;
 }
 
 .user{
-background-color:#fff;}
+background-color:;
+text-align:center;
+}
 .heading_text{
 font-size:28px;
 font-family:simplifica;
@@ -30,10 +40,10 @@ font-family:sans-serif;
 background-color:#F8F8F8;
 }
 .know_more{
-margin-left:150px;
+margin-left:115px;
 border:1px solid #3C1874;
 border-radius:25px;
-box-shadow:2px 5px #888888;
+box-shadow:1px 3px #888888;
 }
 .know_more:hover{
 background-color:blue;
@@ -41,29 +51,16 @@ background-color:blue;
 .quotes{
 font-family:cursive;
 text-align:center;
+font-weight:bold;
 }
 .account_card{
-margin-left:65px;
-border:2px solid black;
+background-color:;
+margin-left:0;
+border:2px solid;
 border-radius:25px;
-box-shadow:3px 7px;
+box-shadow:2px 3px #888888;
 }
-.a_1{
-margin-left:20px;
-margin-top:-5px;
-}
-.a_2{
-margin-left:100px;
-margin-top:-49px;
-}
-.a_3{
-margin-left:180px;
-margin-top:-51px;
-}
-.a_4{
-margin-left:255px;
-margin-top:-49px;
-}
+
 .card_dec{
 border:1px solid #3C1874;
 border-radius:35px;
@@ -89,8 +86,10 @@ margin-top:10px;
 position:relative;
 }
 .Dropdown:hover .Dropdown-Menu{
-display:table;
+display:flex;
+position:relative;
 }
+
 .tele_icon{
 border-radius:50%
 }
@@ -106,15 +105,16 @@ font-size:19px;
 
 .brand_name{
 animation-name:example;
-animation-duration:7s;
+font-weight:bold;
+animation-duration:5s;
 }
 @keyframes example{
-0%{color:red;}
-25%{color:yellow;}
-50%{color:green;}
-70%{color:pink;}
-85%{color:violet;}
-100%{color:brown;}
+0%{color:green;}
+25%{color:red;}
+50%{color:fuchsia;}
+70%{color:tomato;}
+85%{color:blue;}
+100%{color:pink;}
 }
 .name{
 position:relative;
@@ -130,12 +130,13 @@ animation-direction:reverse;
 100%{left:0px;top:0px;}
 }
 
-.card_slide{
-position:relative;
-animation-name:exam;
-animation-duration:1.3s;
-}
-@keyframes exam{
-0%{left:0px;top:0px;}
-100%{left:5opx;top:60px;}
-}
+
+/*.card_slide{*/
+/*position:relative;*/
+/*animation-name:exam;*/
+/*animation-duration:3s;*/
+/*}*/
+/*@keyframes exam{*/
+/*0%{left:0px;top:0px;}*/
+/*100%{left:0px;top:40px;}*/
+/*}*/

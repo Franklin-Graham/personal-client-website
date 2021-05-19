@@ -15,17 +15,23 @@
   </div>
 </div>
 <br>
+<hr>
+<center>
 {% for y in object_4 %}
-<div class="card account_card" style="width:21rem;">
+
+<div class="card account_card" style="width:12rem;">
 <div class="card-body account_link">
-    <div class="a_1"><a href="{{y.Github}}"><i style="font-size:3em;color:black;" class="fab fa-github"></i></a></div>
-    <div class="a_2"><a href="{{y.Telegram}}"><i style="font-size:3em;color:black;" class="fab fa-telegram"></i></a></div>
-    <div class="a_3"><a href="{{y.Facebook}}"><i style="font-size:3em;color:black;" class="fab fa-facebook"></i></a></div>
-    <div class="a_4"><a href="{{y.Twitter}}"><i style="font-size:3em;color:black;" class="fab fa-twitter-square"></i></a></div>
+    <div class="col-12 col-sm-12 col-md-4 xol-lg-4">
+    <a href="{{y.Github}}"><i style="font-size:2em;color:black;" class="fab fa-github"></i></a>
+    <a href="{{y.Telegram}}"><i style="font-size:2em;color:black;" class="fab fa-telegram"></i></a>
+    <a href="{{y.Facebook}}"><i style="font-size:2em;color:black;" class="fab fa-facebook"></i></a>
+    <a href="{{y.Twitter}}"><i style="font-size:2em;color:black;" class="fab fa-twitter-square"></i></a>
+    </div>
 </div>
 </div>
     {% endfor %}
-<br>
+    </center>
+<hr>
 
 <div class="card shadow-lg p-3 mb-5 bg-body rounded card_dec" id="about">
   <div class="card-body">
@@ -35,12 +41,12 @@
 </div>
 
 
-<div class="card shadow-sm p-3 mb-5 bg-body rounded " id="tele">
+<div class="card shadow-sm p-3 mb-5 bg-body rounded card_slide" id="tele">
     <div class="card-body">
 <h4 class="heading_text"><i class="fab fa-telegram"></i> Telegram Bots</h4>
         {% for x in object_2 %}
-    <div class="card-body shadow-lg p-3 mb-5 bg-body rounded paragraph_text card_slide">
-    <img class="tele_icon" src="{{x.Telegram_icon.url}}" alt="" width="60px" height="60px"><a class="tele_link" href="#"> {{x.Telegram_bot}} </a>
+    <div class="card-body shadow-lg p-3 mb-5 bg-body rounded paragraph_text">
+    <img class="tele_icon" src="{{x.Telegram_icon.url}}" alt="" width="60px" height="60px"> <a style="text-decoration:none;margin-left:25px;font-size:17px;text-align:center;color:black;" href="https://t.me/{{x.Telegram_bot}}">{{x.Telegram_bot}}</a>
     </div>
         {% endfor %}
     </div>
@@ -53,18 +59,18 @@
 <div class="Dropdown">
 <button id="Dropdown-Button" class="btn btn-dark btn-sm">Buy me a coffee <i class="fas fa-coffee"></i></button>
     <div class="Dropdown-Menu">
-        <p class="upi">UPI: {{i.your_upi}}</p>
+        <span class="upi">UPI: {{i.your_upi}}</span>
     </div>
 </div>
 </div>
 <hr>
-<br>
+
 
 <div class="card shadow-sm p-3 mb-5 bg-body rounded">
 <h4 class="heading_text"><i class="fab fa-github-square"></i> GitHub</h4>
     {% for z in object_3 %}
     <div class=" card-body shadow-lg p-3 mb-5 bg-body rounded paragraph_text">
-        <a style="text-decoration:none;margin-left:25px;font-size:15px;text-align:center;color:black;" href="https://github.com/Clinton-Abraham{{z.Repository_name}}">{{z.Repository_name}}</a>
+        <a style="text-decoration:none;margin-left:25px;font-size:15px;text-align:center;color:black;" href="https://github.com/Clinton-Abraham/{{z.Repository_name}}">{{z.Repository_name}}</a>
     <br><br>
     </div>
     {% endfor %}
