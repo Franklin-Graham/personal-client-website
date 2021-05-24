@@ -1,6 +1,6 @@
 # personal-client-website
 
-     It's an dynamic website made for my friend which is reusable, built by using django-framework.
+     It's an dynamic website Create for my friend which is reusable, built by using django-framework.
 Content of the website focused on telegram project..
 
 # Get the website:
